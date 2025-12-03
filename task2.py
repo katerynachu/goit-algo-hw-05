@@ -16,10 +16,11 @@ def binary_search_bounds(array,target):
             high = mid - 1
         if guess < target:
             low = mid + 1  
-    return (i, upper_bound)       
+    return (i, upper_bound)   
+    
+if __name__ == '__main__':
+    data = [1.5, 3.2, 4.0, 6.8, 8.5, 9.1]
 
-data = [1.5, 3.2, 4.0, 6.8, 8.5, 9.1]
-
-print(binary_search_bounds(data,6.0))
+    print(binary_search_bounds(data,6.0))
 
 
